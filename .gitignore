@@ -1,0 +1,31 @@
+# Virtual Environments
+venv/
+pipeline_venv/
+venv310/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Model files
+*.npz
+*.pkl
+*.h5
+*.pth
+
+# Data folders
+dataset/
+features_data_volleyball/
+keypoints_data/
+unsafe_features_data_volleyball/
+unsafe_keypoints_data/
+unsafe_smoothed_data/
+smoothed_data/
+report_output/
+
+# Videos
+*.mp4
+
+# OS files
+.DS_Store
+Thumbs.db
