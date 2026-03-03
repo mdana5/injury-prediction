@@ -109,7 +109,7 @@ To improve generalization and handle class imbalance, GAN-based data augmentatio
 
 ---
 
-## 🏗 SYSTEM ARCHITECTURE
+##  SYSTEM ARCHITECTURE
 
 The overall architecture of ProActAI follows a structured pipeline integrating computer vision, feature engineering, temporal modeling, and deep learning-based classification.
 
