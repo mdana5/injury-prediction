@@ -52,3 +52,27 @@ By building ProActAI, the system enables:
 → Real-time feedback for safer training  
 → Data-driven coaching decisions  
 → Improved athlete safety and performance  
+
+
+---
+
+## 📊 DATASET USED
+
+The dataset for this project consists of volleyball action videos categorized into SAFE and UNSAFE movement classes.
+
+The videos include three primary action types:
+
+- Attack  
+- Block  
+- Defense  
+
+Safe videos represent correct posture and biomechanically stable movements, while unsafe videos include common mistakes such as improper landing mechanics, unstable knee alignment, excessive torso bending, and incorrect joint positioning.
+
+Each video is processed frame-by-frame to extract 32 skeletal keypoints using pose estimation. From these keypoints, biomechanical features such as joint angles, posture alignment, and movement velocity are computed. The extracted features are segmented into fixed-length temporal windows for time-series modeling.
+
+To address data imbalance between safe and unsafe samples, GAN-based synthetic augmentation is applied to improve model generalization.
+
+The final processed dataset consists of structured time-series windows used for training and evaluation of the LSTM-based injury risk classifier.
+
+
+
