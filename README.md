@@ -56,7 +56,7 @@ By building ProActAI, the system enables:
 
 ---
 
-## 📊 DATASET USED
+##  DATASET USED
 
 The dataset for this project consists of volleyball action videos categorized into SAFE and UNSAFE movement classes.
 
@@ -73,6 +73,39 @@ Each video is processed frame-by-frame to extract 32 skeletal keypoints using po
 To address data imbalance between safe and unsafe samples, GAN-based synthetic augmentation is applied to improve model generalization.
 
 The final processed dataset consists of structured time-series windows used for training and evaluation of the LSTM-based injury risk classifier.
+
+
+---
+
+##  PROJECT APPROACH
+
+The ProActAI system follows a structured pipeline for injury risk prediction using video-based pose analysis and deep learning.
+
+The process begins with video acquisition, where sports activity is captured either through recorded footage or live webcam input. Each video is processed frame-by-frame, and skeletal keypoints are extracted using pose estimation techniques.
+
+From the detected keypoints, biomechanical features such as joint angles, torso alignment, velocity, and posture stability metrics are computed. These features are normalized and organized into fixed-length temporal windows to preserve motion continuity.
+
+The segmented time-series windows are then fed into an LSTM-based neural network, which learns temporal dependencies and movement progression patterns. To improve robustness and handle class imbalance, GAN-based data augmentation is applied during training.
+
+Finally, the trained model classifies each window as SAFE or UNSAFE and computes a probability-based injury risk score at the video level, enabling proactive detection of risky movements.
+
+
+
+---
+
+##  PROJECT METHODOLOGY
+
+The ProActAI system follows a structured pipeline to predict injury risk from sports videos.
+
+First, sports activity videos are captured either through recorded footage or live webcam input. Each video is processed frame-by-frame, and skeletal keypoints are extracted using pose estimation techniques.
+
+From these keypoints, biomechanical features such as joint angles, torso alignment, posture balance, and movement velocity are computed. These features are normalized to ensure consistency across different athletes and recording conditions.
+
+The continuous motion data is segmented into fixed-length temporal windows to preserve movement progression. These windowed sequences are then used as inputs to a Long Short-Term Memory (LSTM) network, which learns temporal dependencies and identifies unsafe movement patterns.
+
+To improve generalization and handle class imbalance, GAN-based data augmentation is applied during training. The trained model classifies each window as SAFE or UNSAFE and generates a probability-based injury risk score at the video level.
+
+
 
 
 
