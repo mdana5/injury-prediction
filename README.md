@@ -115,11 +115,12 @@ The overall architecture of ProActAI follows a structured pipeline integrating c
 
 The system begins with video acquisition, followed by pose estimation to extract skeletal keypoints. Biomechanical features are computed from these keypoints and organized into temporal windows. These sequences are then processed using LSTM-based models to classify movements as SAFE or UNSAFE. Finally, a probability-based injury risk score is generated at the video level.
 
-<p align="center">
-  ![System Architecture](Images/system_architecture.png)
-  <br>
-  <em>Figure: Injury Prediction System Architecture</em>
-</p>
+
+
+![System Architecture](./Images/system_architecture.png)
+
+*Figure: Injury Prediction System Architecture*
+
 
 
 
