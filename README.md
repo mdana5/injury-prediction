@@ -107,5 +107,21 @@ To improve generalization and handle class imbalance, GAN-based data augmentatio
 
 
 
+---
+
+## 🏗 SYSTEM ARCHITECTURE
+
+The overall architecture of ProActAI follows a structured pipeline integrating computer vision, feature engineering, temporal modeling, and deep learning-based classification.
+
+The system begins with video acquisition, followed by pose estimation to extract skeletal keypoints. Biomechanical features are computed from these keypoints and organized into temporal windows. These sequences are then processed using LSTM-based models to classify movements as SAFE or UNSAFE. Finally, a probability-based injury risk score is generated at the video level.
+
+<p align="center">
+  <img src="Images/system_architecture.png" width="700"/>
+  <br>
+  <em>Figure: ProActAI System Architecture</em>
+</p>
+
+
+
 
 
