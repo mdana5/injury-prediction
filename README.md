@@ -118,7 +118,7 @@ The system begins with video acquisition, followed by pose estimation to extract
 <p align="center">
   <img src="Images/system_architecture.png" width="700"/>
   <br>
-  <em>Figure: ProActAI System Architecture</em>
+  <em>Figure: Injury Prediction System Architecture</em>
 </p>
 
 
