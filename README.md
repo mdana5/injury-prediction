@@ -20,7 +20,7 @@ The goal of this project is to build a reliable AI-driven framework that can pro
 
 ##  OBJECTIVES
 
-**The objective of this project is to develop an AI-driven system that analyzes sports movements using pose estimation and deep learning to predict potential injury risks. The system extracts skeletal keypoints from video input, computes biomechanical features such as joint angles and posture alignment, and models temporal movement patterns using LSTM networks. By classifying actions as safe or unsafe and generating a probability-based risk score, the project aims to provide early detection of injury-prone movements and support safer training practices.**
+The objective of this project is to develop an AI-driven system that analyzes sports movements using pose estimation and deep learning to predict potential injury risks. The system extracts skeletal keypoints from video input, computes biomechanical features such as joint angles and posture alignment, and models temporal movement patterns using LSTM networks. By classifying actions as safe or unsafe and generating a probability-based risk score, the project aims to provide early detection of injury-prone movements and support safer training practices.
 ---
 
 ##  PROBLEM STATEMENT
